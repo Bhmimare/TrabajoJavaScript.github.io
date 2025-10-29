@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fotografía profesional por Badr Hmimar: retratos, eventos y sesiones personalizadas en Sevilla.">
+    <title>Badr Hmimar | Fotografía Profesional</title>
+
+    <!-- Iconos y Fuentes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/logotipoFvicon.png" type="image/png">
+
+    <!-- Lightbox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link href="./css/estilos.css" rel="stylesheet">
+  </head>
+
+  <body id="fondo">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-container">
+        <!-- LOGO -->
+        <div class="logo">
+          <img src="./images/logotipo.png" class="img-logo" alt="Logo de Badr Hmimar Fotógrafo">
+          <h1>Badr <span>Hmimar</span></h1>
+        </div>
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="nav" id="nav-menu">
+          <a href="./index.html" class="active">Inicio</a>
+          <a href="./views/galeria.html">Galería</a>
+          <a href="./views/presupuesto.html">Presupuesto</a>
+          <a href="./views/contacto.html">Contacto</a>
+        </nav>
+
+        <!-- BOTÓN HAMBURGUESA -->
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú de navegación">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="mi_portada">
+      <!-- SECCIÓN SLIDER -->
+      <section class="animaciones">
+        <div class="carrusel-container">
+          <div class="carrusel">
+            <div class="slides">
+              <img src="./images/carrousel-1.jpg" alt="" width="1280" height="720">
+              <img src="./images/carrousel-2.jpg" alt="" width="1280" height="720">
+              <img src="./images/carrousel-3.jpg" alt="" width="1280" height="720">
+              <img src="./images/carrousel-4.jpg" alt="" width="1280" height="720">
+              <img src="./images/carrousel-5.jpg" alt="" width="1280" height="720">
+            </div>
+          </div>
+        </div>
+
+        <div class="titulo-pre">
+          <h2 class="titulo">ÚNETE A MÍ EN UN EXTRAORDINARIO<span class="parrafo">TOUR FOTOGRÁFICO</span></h2>
+        </div>
+      </section>
+
+      <!-- SECCIÓN GALERÍA -->
+      <section class="galerias">
+        <div class="contenedor">
+          <h2 class="titulo">Galería</h2>
+          <div class="contenedor-galeria">
+            <div class="galeria">
+              <div class="foto">
+                <a href="./images/galeria-1.jpg" data-lightbox="galeria" data-title="Frontal Canon" width="1080" height="1620">
+                  <img src="./images/galeria-1.jpg" alt="Frontal Canon" width="1080" height="1620">
+                  <div class="ampliar">
+                    <button class="ampliar">Ampliar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="galeria">
+              <div class="foto">
+                <a href="./images/galeria-2.jpg" data-lightbox="galeria" data-title="Mando Canon" width="1080" height="1620">
+                  <img src="./images/galeria-2.jpg" alt="Mando Canon" width="1080" height="1620">
+                  <div class="ampliar">
+                    <button class="ampliar">Ampliar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="galeria">
+              <div class="foto">
+                <a href="./images/galaria-3.jpg" data-lightbox="galeria" data-title="Guía de Tren" width="1080" height="1620">
+                  <img src="./images/galaria-3.jpg" alt="Guía de Tren" width="1080" height="1620">
+                  <div>
+                    <button class="ampliar">Ampliar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="galeria">
+              <div class="foto">
+                <a href="./images/galeria-4.jpg" data-lightbox="galeria" data-title="Árbol en Invierno" width="1080" height="1620">
+                  <img src="./images/galeria-4.jpg" alt="Árbol en Invierno" width="1080" height="1620">
+                  <div class="ampliar">
+                    <button class="ampliar">Ampliar</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIONES NOTICIAS Y EVENTOS -->
+      <div class="contenedor-principal">
+        <!-- Noticias -->
+        <section class="seccion noticias">
+          <h2>Noticias Recientes</h2>
+          <div id="contenedor-noticias" class="contenedor-items"></div>
+          <div class="leerMasContenido">
+            <p class="puntos">
+              Calendario de actividades de octubre de 2025. Cubrimos desde ruedas de prensa hasta grandes eventos...
+            </p>
+            <button class="btn-leer-mas">Leer más</button>
+          </div>
+        </section>
+
+        <!-- Eventos -->
+        <section class="seccion eventos">
+          <h2>Próximos Eventos</h2>
+          <div id="contenedor-eventos" class="contenedor-items"></div>
+          <div class="leerMasContenido">
+            <p class="puntos">
+              Soluciones gráficas para los eventos de su empresa, tanto en fotografía como en video...
+            </p>
+            <button class="btn-leer-mas">Leer más</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-contenedor">
+        <div class="footer-logo">
+          <h2 class="logotipo">
+            <span class="nombre-logo">Badr Hmimar</span> <br>
+            <span class="fotografo-logo">FOTÓGRAFO</span>
+          </h2>
+          <p>Capturando emociones, <br> momentos y belleza en cada disparo.</p>
+        </div>
+
+        <div class="footer-redes">
+          <h3>Sígueme</h3>
+          <div class="iconos-redes">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook de Badr Hmimar">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram de Badr Hmimar" title="Sígueme en Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="Canal de YouTube de Badr Hmimar">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://meetup.com" target="_blank" aria-label="Perfil de Meetup de Badr Hmimar">
+              <i class="fa-brands fa-meetup"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> C/ Divina Pastora 45, Sevilla
+          </p>
+          <p><i class="fa-solid fa-phone"></i> +34 600 123 456</p>
+          <p><i class="fa-solid fa-envelope"></i> info@badrhmimar.com</p>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2025 Badr Hmimar Fotógrafo | Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- SCRIPT PRINCIPAL -->
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>

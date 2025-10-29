@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badr Hmimar | Galería</title>
+
+  <!-- Iconos y fuentes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+   <!-- Favicon -->
+  <link rel="icon" href="../images/logotipoFvicon.png" type="image/png">
+
+  <!-- Estilos -->
+  <link href="../Css/estilos.css" rel="stylesheet">
+</head>
+
+<body id="fondo">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <!-- LOGO -->
+      <div class="logo">
+        <img src="../images/logotipo.png" class="img-logo" alt="Logo Badr Hmimar">
+        <h1>Badr <span>Hmimar</span></h1>
+      </div>
+
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <nav class="nav" id="nav-menu">
+        <a href="../index.html">Inicio</a>
+        <a href="galeria.html" class="active">Galería</a>
+        <a href="presupuesto.html">Presupuesto</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <div class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL DE LA GALERIA -->
+  <main class="galeria-principal">
+
+    <div id="visor" class="visor">
+      <img id="imagenPrincipal" class="imagenPrincipal" src="../images/miniatura.png" alt="Imagen Principal del Proyecto" tabindex="0">
+    </div>
+
+    <h2 class="titulo-2">BIENVENIDO A MI GALERIA</h2>
+
+    <!-- Primera fila de miniaturas -->
+    <div class="galeria-miniatura">
+      <img class="miniatura" src="../images/miniatura-1.png" alt="Miniatura 1" data-full="../images/miniatura-1.png">
+      <img class="miniatura" src="../images/miniatura-2.png" alt="Miniatura 2" data-full="../images/miniatura-2.png">
+      <img class="miniatura" src="../images/miniatura-3.png" alt="Miniatura 3" data-full="../images/miniatura-3.png">
+      <img class="miniatura" src="../images/miniatura-4.png" alt="Miniatura 4" data-full="../images/miniatura-4.png">
+    </div>
+
+    <!-- Segunda fila de miniaturas -->
+    <div class="galeria-miniatura">
+      <img class="miniatura" src="../images/miniatura-5.jpg" alt="Miniatura 5" data-full="../images/miniatura-5.jpg">
+      <img class="miniatura" src="../images/miniatura-6.jpg" alt="Miniatura 6" data-full="../images/miniatura-6.jpg">
+      <img class="miniatura" src="../images/miniatura-7.jpg" alt="Miniatura 7" data-full="../images/miniatura-7.jpg">
+      <img class="miniatura" src="../images/miniatura-8.jpg" alt="Miniatura 8" data-full="../images/miniatura-8.jpg">
+    </div>
+
+    <!-- SECCIÓN ACERCA DE -->
+    <section class="acerca-de">
+      <h2 class="titulo">SOBRE <span class="nombre-logo">Badr Hmimar</span>
+          <span class="fotografo-logo">FOTÓGRAFO</span></h2>
+      <article class="texto">
+        <h3>ACERCA DE MÍ</h3>
+        <p class="salto-linea">
+          <span class="nombre-logo">Badr Hmimar</span>
+          <span class="fotografo-logo">FOTÓGRAFO</span> es una mirada única detrás del lente. Con una pasión innata por capturar momentos auténticos...
+        </p>
+        <p>
+          Desde retratos hasta fotografía de eventos, moda o paisajes urbanos, su estilo combina técnica precisa con una sensibilidad artística...
+        </p>
+        <p>
+          Con sede en [Ciudad o Región], y disponible para proyectos nacionales e internacionales, 
+         <span class="nombre-logo">Badr Hmimar</span>
+          <span class="fotografo-logo">FOTÓGRAFO</span> ofrece servicios personalizados.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <button id="modal-close" class="modal-close" aria-label="Cerrar">&times;</button>
+    <button id="modal-prev" class="modal-nav modal-prev" aria-label="Anterior">&#10094;</button>
+    <img id="modal-img" class="modal-img" src="../images/miniatura.png" alt="">
+    <button id="modal-next" class="modal-nav modal-next" aria-label="Siguiente">&#10095;</button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenedor">
+      <div class="footer-logo">
+        <h2>
+          <span class="nombre-logo">Badr Hmimar</span><br>
+          <span class="fotografo-logo">FOTÓGRAFO</span>
+        </h2>
+        <p>Capturando emociones, <br> momentos y belleza en cada disparo.</p>
+      </div>
+
+      <div class="footer-redes">
+        <h3>Sígueme</h3>
+        <div class="iconos-redes">
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://meetup.com" target="_blank"><i class="fa-brands fa-meetup"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-contacto">
+        <h3>Contacto</h3>
+        <p><i class="fa-solid fa-location-dot"></i> C/ Divina Pastora 45, Sevilla</p>
+        <p><i class="fa-solid fa-phone"></i> +34 600 123 456</p>
+        <p><i class="fa-solid fa-envelope"></i> info@badrhmimar.com</p>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; 2025 Badr Hmimar Fotógrafo | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="../js/script.js" defer></script>
+</body>
+</html>

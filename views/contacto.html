@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badr Hmimar | Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Iconos y fuentes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+   <!-- Favicon -->
+    <link rel="icon" href="../imageS/logotipoFvicon.png" type="image/png">
+
+  <!-- Estilos Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body id="fondo">
+
+<!-- HEADER -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="../images/logotipo.png" class="img-logo" alt="Logo Badr Hmimar">
+        <h1>Badr <span>Hmimar</span></h1>
+      </div>
+      <nav class="nav" id="nav-menu">
+        <a href="/index.html">Inicio</a>
+        <a href="/views/galeria.html">Galería</a>
+        <a href="/views/presupuesto.html">Presupuesto</a>
+        <a href="/views/contacto.html" class="active">Contacto</a>
+      </nav>
+      <div class="menu-btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor-contacto">
+      <section class="intro-contacto">
+        <h2>¿Listo para capturar momentos inolvidables?</h2>
+        <p>
+          En <strong>Badr Hmimar Fotógrafo</strong> creemos que cada imagen cuenta una historia.  
+          Completa el siguiente formulario si deseas reservar tu sesión o necesitas más información sobre nuestros servicios.  
+          ¡Nos encantará formar parte de tu historia visual!
+        </p>
+      </section>
+
+      <!-- === FORMULARIO + MAPA === -->
+      <section class="contacto-grid">
+
+        <!-- Columna izquierda: Formulario -->
+        <div class="contacto-form">
+          <div>
+            <h2>Formulario de contacto</h2>
+            <form id="formContacto">
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre y apellidos">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+34 600 123 456">
+              </div>
+
+              <div class="form-group">
+                <label for="servicio">Tipo de sesión</label>
+                <select id="servicio" name="servicio">
+                  <option value="">Selecciona una opción</option>
+                  <option value="retrato">Retrato profesional</option>
+                  <option value="boda">Boda</option>
+                  <option value="evento">Evento</option>
+                  <option value="producto">Fotografía de producto</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Cuéntame más sobre tu proyecto..."></textarea>
+              </div>
+            </form>
+          </div>
+          <button type="submit" form="formContacto" class="form-btn">Enviar mensaje</button>
+        </div>
+
+        <!-- Columna derecha: Mapa -->
+        <div class="contacto-mapa">
+          <div>
+            <h3>Encuéntranos fácilmente</h3>
+            <p>
+              Nuestra galería y estudio se encuentran en el corazón de Sevilla.  
+            </p>
+          </div>
+          <div id="map"></div>
+          <button id="ruta-btn">Calcular ruta desde mi ubicación</button>
+        </div>
+      </section>
+    </div>
+  </main>
+ 
+  <!-- FOOTER -->
+  <footer class="footer">
+  <div class="footer-contenedor">
+
+    <div class="footer-logo">
+      <h2><span class="nombre-logo">Badr Hmimare</span> <br> 
+        <span class="fotografo-logo">FOTÓGRAFO</span></h2>
+      <p>Capturando emociones, <br> momentos y belleza en cada disparo.</p>
+    </div>
+
+    <div class="footer-redes">
+      <h3>Sígueme</h3>
+      <div class="iconos-redes">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://meetup.com" target="_blank"><i class="fa-brands fa-meetup"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-contacto">
+      <h3>Contacto</h3>
+      <p><i class="fa-solid fa-location-dot"></i> C/ Divina Pastora 45, Sevilla</p>
+      <p><i class="fa-solid fa-phone"></i> +34 600 123 456</p>
+      <p><i class="fa-solid fa-envelope"></i> info@badrhmimar.com</p>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    <p>&copy; 2025 Badr Hmimar Fotógrafo | Todos los derechos reservados</p>
+  </div>
+</footer>
+
+  <!-- Librerías -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script src="https://kit.fontawesome.com/a2d9d6ef72.js" crossorigin="anonymous"></script>
+
+  <!-- Script principal -->
+  <script src="../js/script.js" defer></script>
+</body>
+</html>
