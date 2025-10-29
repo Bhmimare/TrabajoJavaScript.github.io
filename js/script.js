@@ -23,7 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
   --- --- NOTICIAS jSON INDEX --- ---
   =================================*/
 
-  fetch("../data/noticias.json")
+ const basePath = window.location.hostname.includes("github.io")
+  ? "https://bhmimare.github.io/Trabajo-JavaScript.github.io/"
+  : "../";
+
+fetch(`${basePath}data/noticias.json`)
     .then((res) => {
       if (!res.ok) throw new Error("Error al cargar noticias");
       return res.json();
@@ -488,4 +492,5 @@ document.getElementById("ruta-btn").addEventListener("click", () => {
     alert("Tu navegador no soporta geolocalización.");
   }
 });
+
 
