@@ -78,6 +78,7 @@ h1.titulo {
     backdrop-filter: blur(8px); /* Blur ligeramente aumentado */
     box-shadow: 0 3px 8px rgba(86, 86, 86, 0.4);
     height: 80px;
+    position: fixed;
 }
 
 .header-container {
@@ -1210,6 +1211,7 @@ h1.titulo {
     text-align: center;
   }
 }
+
 
 
 
