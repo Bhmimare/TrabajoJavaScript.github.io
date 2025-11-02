@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 /* =================================================================
           1. Manejo del Formulario de Contacto
 ================================================================= */
@@ -94,8 +95,4 @@ document.getElementById("ruta-btn").addEventListener("click", () => {
     // Mensaje si el navegador no admiti geolocalización
     alert("Tu navegador no soporta geolocalización.");
   }
-
 });
-
-
-
