@@ -951,8 +951,10 @@ p {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
-    height: 100%;
     min-height: 450px;
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 100px);
 }
 
 #ruta-btn {
@@ -1212,6 +1214,7 @@ h1.titulo {
     text-align: center;
   }
 }
+
 
 
 
