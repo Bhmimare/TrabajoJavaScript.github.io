@@ -1,4 +1,16 @@
+// Esperar a que el DOM esté cargado
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menu-btn");
+  const navMenu = document.getElementById("nav-menu");
 
+  // Si existen ambos elementos, configurar el evento
+  if (menuBtn && navMenu) {
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("nav-visible"); // Cambia la visibilidad del menú
+      menuBtn.classList.toggle("open"); // Cambia el icono si lo deseas (por ejemplo, de "bars" a "x")
+    });
+  }
+});
 
 /* =================================================================
           1. Manejo del Formulario de Contacto
@@ -82,4 +94,5 @@ document.getElementById("ruta-btn").addEventListener("click", () => {
     // Mensaje si el navegador no admiti geolocalización
     alert("Tu navegador no soporta geolocalización.");
   }
+
 });
