@@ -27,7 +27,7 @@
     <div class="header-container">
       <div class="logo">
         <img src="../images/logotipo.png" class="img-logo" alt="Logo Badr Hmimar">
-        <h1>Badr <span>Hmimar</span></h1>
+        <h1>Badr Hmimar</h1>
       </div>
       <nav class="nav" id="nav-menu">
         <a href="../index.html">Inicio</a>
@@ -55,7 +55,18 @@
       <!-- === FORMULARIO + MAPA === -->
       <section class="contacto-grid">
 
-        <!-- Columna izquierda: Formulario -->
+         <div class="contacto-mapa">
+          <div>
+            <h3>Encuéntranos fácilmente</h3>
+            <p>
+              Nuestra galería y estudio se encuentran en el corazón de Sevilla.  
+            </p>
+          </div>
+          <div id="map"></div>
+           <button id="ruta-btn">Calcular ruta desde mi ubicación</button>
+        </div>
+
+        <!-- Formulario -->
         <div class="contacto-form">
           <div>
             <h2>Formulario de contacto</h2>
@@ -97,16 +108,7 @@
         </div>
 
         <!-- Columna derecha: Mapa -->
-        <div class="contacto-mapa">
-          <div>
-            <h3>Encuéntranos fácilmente</h3>
-            <p>
-              Nuestra galería y estudio se encuentran en el corazón de Sevilla.  
-            </p>
-          </div>
-          <div id="map"></div>
-          <button id="ruta-btn">Calcular ruta desde mi ubicación</button>
-        </div>
+       
       </section>
     </div>
   </main>
@@ -117,7 +119,7 @@
 
     <div class="footer-logo">
       <h2><span class="nombre-logo">Badr Hmimare</span> <br> 
-        <span class="fotografo-logo">FOTÓGRAFO</span></h2>
+        <em class="fotografo-logo">FOTÓGRAFO</em></h2>
       <p>Capturando emociones, <br> momentos y belleza en cada disparo.</p>
     </div>
 
@@ -150,9 +152,6 @@
   <script src="https://kit.fontawesome.com/a2d9d6ef72.js" crossorigin="anonymous"></script>
 
   <!-- Script principal -->
-  <script src="../js/script.js" defer></script>
+  <script src="../js/contacto.js" defer></script>
 </body>
-
 </html>
-
-
