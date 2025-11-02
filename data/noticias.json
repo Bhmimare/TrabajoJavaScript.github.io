@@ -4,13 +4,13 @@
       "titulo": "Nueva exposición en Sevilla",
       "fecha": "2026-02-01",
       "descripcion": "Inauguramos nueva exposición de retratos urbanos en el centro histórico de Sevilla.",
-      "imagen": "images/noticias-1.jpg"
+      "imagen": "../images/noticias-1.jpg"
     },
     {
       "titulo": "Premio al mejor fotógrafo emergente",
       "fecha": "2026-04-15",
       "descripcion": "Badr Hmimar ha sido reconocido como uno de los fotógrafos emergentes del año.",
-      "imagen": "images/noticias-2.jpg"
+      "imagen": "../images/noticias-2.jpg"
     }
   ],
   "eventos": [
@@ -18,14 +18,15 @@
       "titulo": "Taller de fotografía nocturna",
       "fecha": "2026-05-05",
       "descripcion": "Aprende técnicas de larga exposición en este taller exclusivo.",
-      "imagen": "images/noticias-3.jpg"
+      "imagen": "../images/noticias-3.jpg"
     },
     {
       "titulo": "Tour fotográfico por Andalucía",
       "fecha": "2026-09-10",
       "descripcion": "Descubre los paisajes más inspiradores del sur de España en este tour guiado.",
-      "imagen": "images/noticias-4.jpg"
+      "imagen": "../images/noticias-4.jpg"
     }
   ]
 }
+
 
