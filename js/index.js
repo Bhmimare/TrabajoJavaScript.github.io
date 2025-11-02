@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/data/noticias.json")
+  fetch("../data/noticias.json")
     .then((res) => {
       if (!res.ok) throw new Error("Error al cargar noticias");
       return res.json();
@@ -89,3 +89,4 @@ function mostrarEventos(eventos) {
     contenedor.appendChild(crearItem(evento));
   });
 }
+
