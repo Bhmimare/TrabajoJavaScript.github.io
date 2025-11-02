@@ -2,6 +2,19 @@
           Presupuesto
    =============================== */
 
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menu-btn");
+  const navMenu = document.getElementById("nav-menu");
+
+  // Si existen ambos elementos, configurar el evento
+  if (menuBtn && navMenu) {
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("nav-visible"); // Cambia la visibilidad del menú
+      menuBtn.classList.toggle("open"); // Cambia el icono si lo deseas (por ejemplo, de "bars" a "x")
+    });
+  }
+});
+
 // !Manejar la validación y el cálculo de presupuesto en tiempo real.
 
 // Esperar a que todo el contenido del DOM (Document Object Model) este cargado.
@@ -156,4 +169,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Calcula el presupuesto inicial al cargar la página (muestra 0.00 € o el valor por defecto).
   calcularPresupuesto();
+
 });
