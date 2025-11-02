@@ -79,6 +79,7 @@ h1.titulo {
     box-shadow: 0 3px 8px rgba(86, 86, 86, 0.4);
     height: 80px;
     position: fixed;
+    z-index: 1000; /* asegurar que header siempre quede por encima de todo */
 }
 
 .header-container {
@@ -1211,6 +1212,7 @@ h1.titulo {
     text-align: center;
   }
 }
+
 
 
 
