@@ -47,7 +47,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 L.marker(ubicacionNegocio)
   .addTo(map);
   // Añade un 'popup' para muestrar el marcador
-  .bindPopup(.bindPopup(" <b>Badr Hmimar FOTÓGRAFO</b> <br> Calle Divina Pastora 45, Sevilla")
+  .bindPopup("<b>Badr Hmimar FOTÓGRAFO</b> <br> Calle Divina Pastora 45, Sevilla")
   .openPopup(); // Abre el popup automáticamente al cargar
 
 
@@ -96,4 +96,5 @@ document.getElementById("ruta-btn").addEventListener("click", () => {
   }
 
 });
+
 
